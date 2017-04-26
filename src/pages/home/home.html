@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <daypilot-scheduler [events]="events" [config]="config" #scheduler></daypilot-scheduler>
+
+</ion-content>
+
+<ion-footer>
+  <button ion-button (click)="goToDynamic($e)">Load DayPilot through dynamic component</button>
+</ion-footer>
